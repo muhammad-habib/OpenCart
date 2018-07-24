@@ -1,0 +1,93 @@
+<!--
+/*
+ * @support
+ * https://www.facebook.com/ashif.ali.169
+ * ashifali24alld@gmail.com
+ * for 2.1.0.1 and others
+ * */
+-->
+<modification>
+   <id>Product zoom and replace zoom image to thumbnails</id>
+	<version>1.0.0</version>
+	<vqmver>2.5.0</vqmver>
+	<author>ASHIF ALI</author>
+	
+	
+	
+	<file name="catalog/controller/product/product.php">
+        <operation error="skip">
+            <search position="after"><![CDATA['popup' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height')),]]></search>
+            <add><![CDATA[
+			'swap' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height')),
+			]]></add>
+        </operation>
+    </file>	
+	
+	 <file name="catalog/view/theme/*/template/product/product.tpl">
+	   <operation>
+		   <search position="replace"><![CDATA[<li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>]]></search>
+		   <add>
+			   <![CDATA[
+					<span style="display:block;"><a class="thumbnail min-h" href="<?php //echo $popup; ?>" title="<?php echo $heading_title; ?>"><img class="main_image" src="<?php echo $thumb; ?>" id="zoom_01" data-zoom-image="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></span>
+			   ]]>
+		   </add>
+		</operation>
+		<operation>
+		   <search position="replace"><![CDATA[<li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>]]></search>
+		   <add>
+			   <![CDATA[
+					<span class="image-additional" style="cursor:pointer;"><a  class="thumbnail" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>"  name="<?php echo $image['swap']; ?>" id="<?php echo $image['popup']; ?>" class="thumb_image1"  data-zoom-image="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></span>
+			   ]]>
+		   </add>
+		</operation>
+		<operation>
+		   <search position="replace"><![CDATA[$('.thumbnails').magnificPopup({]]></search>
+		   <add>
+			   <![CDATA[
+					$('.thumbnails_remove').magnificPopup({
+			   ]]>
+		   </add>
+		</operation>
+		<operation>
+		   <search position="before"><![CDATA[<?php echo $footer; ?>]]></search>
+		   <add>
+			   <![CDATA[
+					
+<script type="text/javascript">
+
+$(document).ready(function() {
+	 
+   $("#zoom_01").elevateZoom({tint:true, tintColour:'#eef2f5', tintOpacity:1.5});
+  $('.thumb_image1').click(function(){
+	  
+		small_image = $(this).attr('name');
+		large_image = $(this).attr('id');
+		$('.main_image').attr('src',small_image);
+		$('#zoom_01').attr('src',small_image);
+		$('#zoom_01').attr('data-zoom-image',large_image);	
+		smallImage = small_image;
+		largeImage = large_image;
+ 	    var ez =   $('#zoom_01').data('elevateZoom');	    
+	    ez.swaptheimage(smallImage, largeImage); 
+ 	
+	});	
+});
+</script>
+			   ]]>
+		   </add>
+		</operation>	 
+	</file>
+	
+	 <file name="catalog/view/theme/*/template/common/header.tpl">
+	   <operation>
+		   <search position="after"><![CDATA[<script src="catalog/view/javascript/common.js" type="text/javascript"></script>]]></search>
+		   <add>
+			   <![CDATA[
+					<script src="catalog/view/javascript/jquery.elevatezoom.min.js" type="text/javascript"></script>
+			   ]]>
+		   </add>
+		</operation>
+		  
+	</file>
+	
+</modification>

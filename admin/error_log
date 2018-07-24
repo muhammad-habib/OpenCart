@@ -1,0 +1,122 @@
+[03-May-2018 10:52:39 America/Chicago] PHP Warning:  require_once(/home_ssd/hoistbc/testapp.hoist-ltd.co.uk/system/startup.php): failed to open stream: No such file or directory in /home/offerandonly/public_html/admin/index.php on line 17
+[03-May-2018 10:52:39 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '/home_ssd/hoistbc/testapp.hoist-ltd.co.uk/system/startup.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/offerandonly/public_html/admin/index.php on line 17
+[07-May-2018 11:38:21 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:38:24 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:38:26 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:38:27 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:38:30 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:38:33 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:52:10 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[07-May-2018 11:52:12 UTC] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/offerandonly/public_html/system/library/db/mpdo.php:9
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 9
+[13-May-2018 22:42:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/offerandonly/public_html/system/library/db/mpdo.php:52
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(16): DB\mPDO->query('SELECT * FROM o...', Array)
+#1 /home/offerandonly/public_html/admin/controller/startup/startup.php(5): DB->query('SELECT * FROM o...')
+#2 /home/offerandonly/public_html/system/storage/modification/system/engine/action.php(51): ControllerStartupStartup->index()
+#3 /home/offerandonly/public_html/system/engine/front.php(34): Action->execute(Object(Registry))
+#4 /home/offerandonly/public_html/system/engine/front.php(19): Front->execute(Object(Action))
+#5 /home/offerandonly/public_html/system/framework.php(103): Front->dispatch(Object(Action), Object(Action))
+#6 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#7 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 52
+[13-May-2018 22:56:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/offerandonly/public_html/system/library/db/mpdo.php:52
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(16): DB\mPDO->query('SELECT * FROM o...', Array)
+#1 /home/offerandonly/public_html/admin/controller/startup/startup.php(5): DB->query('SELECT * FROM o...')
+#2 /home/offerandonly/public_html/system/storage/modification/system/engine/action.php(51): ControllerStartupStartup->index()
+#3 /home/offerandonly/public_html/system/engine/front.php(34): Action->execute(Object(Registry))
+#4 /home/offerandonly/public_html/system/engine/front.php(19): Front->execute(Object(Action))
+#5 /home/offerandonly/public_html/system/framework.php(103): Front->dispatch(Object(Action), Object(Action))
+#6 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#7 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 52
+[13-May-2018 22:57:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/offerandonly/public_html/system/library/db/mpdo.php:52
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(16): DB\mPDO->query('SELECT * FROM o...', Array)
+#1 /home/offerandonly/public_html/admin/controller/startup/startup.php(5): DB->query('SELECT * FROM o...')
+#2 /home/offerandonly/public_html/system/storage/modification/system/engine/action.php(51): ControllerStartupStartup->index()
+#3 /home/offerandonly/public_html/system/engine/front.php(34): Action->execute(Object(Registry))
+#4 /home/offerandonly/public_html/system/engine/front.php(19): Front->execute(Object(Action))
+#5 /home/offerandonly/public_html/system/framework.php(103): Front->dispatch(Object(Action), Object(Action))
+#6 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#7 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 52
+[13-May-2018 22:57:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/offerandonly/public_html/system/library/db/mpdo.php:52
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(16): DB\mPDO->query('SELECT * FROM o...', Array)
+#1 /home/offerandonly/public_html/admin/controller/startup/startup.php(5): DB->query('SELECT * FROM o...')
+#2 /home/offerandonly/public_html/system/storage/modification/system/engine/action.php(51): ControllerStartupStartup->index()
+#3 /home/offerandonly/public_html/system/engine/front.php(34): Action->execute(Object(Registry))
+#4 /home/offerandonly/public_html/system/engine/front.php(19): Front->execute(Object(Action))
+#5 /home/offerandonly/public_html/system/framework.php(103): Front->dispatch(Object(Action), Object(Action))
+#6 /home/offerandonly/public_html/system/startup.php(124): require_once('/home/offerando...')
+#7 /home/offerandonly/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 52
+[29-Jun-2018 19:01:06 UTC] PHP Fatal error:  Uncaught Exception: Failed to connect to database. Reason: 'SQLSTATE[HY000] [1045] Access denied for user 'offerandonly'@'localhost' (using password: YES)' in /home/offerandonly/public_html/system/library/db/mpdo.php:11
+Stack trace:
+#0 /home/offerandonly/public_html/system/library/db.php(9): DB\mPDO->__construct('Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#1 /home/offerandonly/public_html/system/framework.php(36): DB->__construct('mpdo', 'Localhost', 'offerandonly', 'RTTeXz(jLQ7b', 'offerand_offer_...', '3306')
+#2 /home/offerandonly/public_html/vqmod/vqcache/vq2-system_startup.php(124): require_once('/home/offerando...')
+#3 /home/offerandonly/public_html/admin/index.php(23): start('admin')
+#4 {main}
+  thrown in /home/offerandonly/public_html/system/library/db/mpdo.php on line 11

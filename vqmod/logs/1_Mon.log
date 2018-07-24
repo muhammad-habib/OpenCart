@@ -1,0 +1,14 @@
+---------- Date: 2018-05-14 16:59:51 ~ IP : 197.33.106.24 ----------
+REQUEST URI : /index.php?route=product/product&product_id=48
+MOD DETAILS:
+   modFile   : /home/offerandonly/public_html/vqmod/xml/product_zoom.xml
+   id        : Product zoom and replace zoom image to thumbnails
+   version   : 1.0.0
+   vqmver    : 2.5.0
+   author    : ASHIF ALI
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+----------------------------------------------------------------------
+
+
