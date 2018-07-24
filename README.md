@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OpenCart
 
 ## Overview
@@ -75,3 +76,7 @@ Please read the installation instructions included in the repository or download
 - [How to documents](http://docs.opencart.com/)
 - [Newsletter](http://newsletter.opencart.com/h/r/B660EBBE4980C85C)
 - [User Voice suggestions](http://opencart.uservoice.com)
+=======
+# OpenCart
+store management system.
+>>>>>>> 131b8de205d3642b60e74240ce48e072bab835be
