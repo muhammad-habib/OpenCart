@@ -361,11 +361,11 @@ class ControllerAccountRegister extends Controller {
 			$this->error['lastname'] = $this->language->get('error_lastname');
 		}
 
-		if ((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
+		if (((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) && $this->request->post['email']) {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
-		if ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
+		if ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email']) && $this->request->post['email']) {
 			$this->error['warning'] = $this->language->get('error_exists');
 		}
 
@@ -377,7 +377,7 @@ class ControllerAccountRegister extends Controller {
 // 			$this->error['address_1'] = $this->language->get('error_address_1');
 // 		}
 
-		if ((utf8_strlen(trim($this->request->post['city'])) < 2) || (utf8_strlen(trim($this->request->post['city'])) > 128)) {
+		if (((utf8_strlen(trim($this->request->post['city'])) < 2) || (utf8_strlen(trim($this->request->post['city'])) > 128)) && $this->request->post['city'] ) {
 			$this->error['city'] = $this->language->get('error_city');
 		}
 
@@ -389,11 +389,11 @@ class ControllerAccountRegister extends Controller {
 			$this->error['postcode'] = $this->language->get('error_postcode');
 		}
 
-		if ($this->request->post['country_id'] == '') {
-			$this->error['country'] = $this->language->get('error_country');
-		}
+//		if ($this->request->post['country_id'] == '') {
+//			$this->error['country'] = $this->language->get('error_country');
+//		}
 
-		if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '' || !is_numeric($this->request->post['zone_id'])) {
+		if (isset($this->request->post['zone_id']) && $this->request->post['zone_id']  && !is_numeric($this->request->post['zone_id'])) {
 			$this->error['zone'] = $this->language->get('error_zone');
 		}
 
